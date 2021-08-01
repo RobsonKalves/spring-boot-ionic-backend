@@ -1,4 +1,4 @@
-package com.robsonalves.cursomc.services;
+package com.robsonalves.cursomc.services.exception;
 
 //mensagem de erro padrao feito por mim...
 
