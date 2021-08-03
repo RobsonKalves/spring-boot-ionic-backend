@@ -3,19 +3,18 @@ package com.robsonalves.cursomc.domain;
 import java.util.Date;
 
 import javax.persistence.Entity;
-import javax.persistence.Temporal;
-import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.robsonalves.cursomc.domain.enums.EstadoPagamento;
 
 @Entity
 public class PagamentoComBoleto extends Pagamento {
 	private static final long serialVersionUID = 1L;
 	
-	@Temporal(TemporalType.DATE)
+	@JsonFormat(pattern = "dd/MM/yyy")
 	private Date dataVencimento;
 	
-	@Temporal(TemporalType.DATE)
+	@JsonFormat(pattern = "dd/MM/yyy")
 	private Date dataPagamento;
 
 	public PagamentoComBoleto() {
