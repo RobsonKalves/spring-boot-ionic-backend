@@ -63,13 +63,13 @@
 
 		</dependency>
 
-		<dependency>
+<!-- 		<dependency> -->
 
-			<groupId>mysql</groupId>
+<!-- 			<groupId>mysql</groupId> -->
 
-			<artifactId>mysql-connector-java</artifactId>
+<!-- 			<artifactId>mysql-connector-java</artifactId> -->
 
-		</dependency>
+<!-- 		</dependency> -->
 
 		<dependency>
 
@@ -88,12 +88,19 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>io.jsonwebtoken</groupId>
 			<artifactId>jjwt</artifactId>
 			<version>0.7.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
 
 	</dependencies>
 
